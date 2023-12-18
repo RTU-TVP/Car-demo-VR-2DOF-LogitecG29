@@ -6,39 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/RealisticCarControllerV3/Demo Scenes/RCC City AIO.unity
-    guid: 0ca122300a1ebf1479d3dede98437169
+    path: Assets/Project Files/Scenes/Bootstrap.unity
+    guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/RealisticCarControllerV3/Demo Scenes/RCC City.unity
-    guid: 523256c5a87c92d47ae0c39224fc0431
-  - enabled: 1
-    path: Assets/RealisticCarControllerV3/Demo Scenes/RCC City (Car Selection).unity
-    guid: 5e31dbb8aee8b8c42bf3b80d66382547
-  - enabled: 1
-    path: Assets/RealisticCarControllerV3/Demo Scenes/RCC City (Car Selection with
-      Load Next Scene).unity
-    guid: a0b314d8fbd5b14448f3aefa6259ccfa
-  - enabled: 1
-    path: Assets/RealisticCarControllerV3/Demo Scenes/RCC City (Car Selection with
-      Loaded Scene).unity
-    guid: 4ed4684c5573f9e45b300ebeababe238
-  - enabled: 1
-    path: Assets/RealisticCarControllerV3/Demo Scenes/RCC Blank Override Inputs Scene.unity
-    guid: 43318f4700f302d4ca5dfd2f0aa2ab7f
-  - enabled: 1
-    path: Assets/RealisticCarControllerV3/Demo Scenes/RCC Blank Customization Scene.unity
-    guid: eb4e8836a7adf21429a977f49b80f0dc
-  - enabled: 1
-    path: Assets/RealisticCarControllerV3/Demo Scenes/RCC Blank API Test Scene.unity
-    guid: 2862a92e799a28c4dbcbc1e767264a74
-  - enabled: 1
-    path: Assets/RealisticCarControllerV3/Demo Scenes/RCC Blank Test Scene.unity
-    guid: 8552673b36d658b499bac0ead9e759c4
-  - enabled: 1
-    path: Assets/RealisticCarControllerV3/Demo Scenes/RCC Damage Test Scene.unity
-    guid: befe5f7695932b7489879b3ebd7ca461
-  - enabled: 1
-    path: Assets/RealisticCarControllerV3/Demo Scenes/RCC Multiple Terrain Test Scene.unity
-    guid: 5b22dc09418f22845b6e8a126839d5b7
+    path: Assets/Project Files/Scenes/Gameplay.unity
+    guid: 74ba80ce2cc61ae46afcee016204f0b2
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
