@@ -17,7 +17,7 @@ using UnityEngine.EventSystems;
 [AddComponentMenu("BoneCracker Games/Realistic Car Controller/Main/RCC Realistic Car Controller V3")]
 [RequireComponent(typeof(Rigidbody))]
 /// <summary>
-/// Main vehicle controller script that includes Wheels, Steering, Suspensions, Mechanic Configuration, Stability, Lights, Sounds, and Damage in AIO.
+/// Main vehicle controller Ascript that includes Wheels, Steering, Suspensions, Mechanic Configuration, Stability, Lights, Sounds, and Damage in AIO.
 /// </summary>
 public class RCC_CarControllerV3 : RCC_Core {
 
@@ -293,9 +293,9 @@ public class RCC_CarControllerV3 : RCC_Core {
     public int direction = 1;                           // Reverse gear currently?
     internal bool canGoReverseNow = false;  //	If speed is low enough and player pushes the brake button, enable this bool to go reverse.
     public float launched = 0f;
-    public bool AutoReverse = true;                            // Enables / Disables auto reversing when player press brake button. Useful for if you are making parking style game.
-    public bool AutomaticGear = true;                // Enables / Disables automatic gear shifting.
-    internal bool semiAutomaticGear = false;            // Enables / Disables semi-automatic gear shifting.
+    public bool AutoReverse = false;                            // Enables / Disables auto reversing when player press brake button. Useful for if you are making parking style game.
+    public bool AutomaticGear = false;                // Enables / Disables automatic gear shifting.
+    internal bool semiAutomaticGear = true;            // Enables / Disables semi-automatic gear shifting.
     public bool UseAutomaticClutch = true;
     #endregion
 

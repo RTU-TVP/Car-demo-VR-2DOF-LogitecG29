@@ -347,28 +347,6 @@ public partial class @RCC_InputActions: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 },
                 {
-                    ""name"": ""negative"",
-                    ""id"": ""be73745b-397e-4185-9283-ea2f38bf4f84"",
-                    ""path"": ""<Joystick>/stick/down"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""G920"",
-                    ""action"": ""Throttle"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""positive"",
-                    ""id"": ""24631aa9-3d4f-4a4c-9348-c76dc524a7bf"",
-                    ""path"": ""<Joystick>/stick/up"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""G920"",
-                    ""action"": ""Throttle"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
                     ""name"": """",
                     ""id"": ""b7f469da-1f0b-4649-a1d2-d5c6795d48b5"",
                     ""path"": ""<OculusTouchController>{RightHand}/trigger"",
@@ -444,17 +422,6 @@ public partial class @RCC_InputActions: IInputActionCollection2, IDisposable
                     ""action"": ""Handbrake"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""5aaefde0-b9f2-4263-ada8-08c4754560fc"",
-                    ""path"": ""<HID::Logitech G920 Driving Force Racing Wheel for Xbox One>/button2"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""G920"",
-                    ""action"": ""Handbrake"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
@@ -589,17 +556,6 @@ public partial class @RCC_InputActions: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 },
                 {
-                    ""name"": ""negative"",
-                    ""id"": ""c803aabc-d4e4-43bd-8c6f-ada81a3a4ce8"",
-                    ""path"": ""<HID::Logitech G920 Driving Force Racing Wheel for Xbox One>/z"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""G920"",
-                    ""action"": ""Brake"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
                     ""name"": ""wasd"",
                     ""id"": ""b84118c6-f280-4827-aec2-23b358ff2839"",
                     ""path"": ""1DAxis"",
@@ -700,17 +656,6 @@ public partial class @RCC_InputActions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""a72b71b3-a5a9-476e-ba2f-303039d7d7f9"",
-                    ""path"": ""<HID::Logitech G920 Driving Force Racing Wheel for Xbox One>/stick/x"",
-                    ""interactions"": """",
-                    ""processors"": ""Scale"",
-                    ""groups"": ""G920"",
-                    ""action"": ""Steering"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""4f884a2c-fc71-409f-85a6-58868973caca"",
                     ""path"": ""<OculusTouchController>{LeftHand}/thumbstick/x"",
                     ""interactions"": """",
@@ -744,17 +689,6 @@ public partial class @RCC_InputActions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""29b37afd-bc61-4290-9fdc-dd474f1cb45d"",
-                    ""path"": ""<HID::Logitech G920 Driving Force Racing Wheel for Xbox One>/button7"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""G920"",
-                    ""action"": ""Start/Stop Engine"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""5684f55e-081f-4c1b-907a-f29c3e57b7ae"",
                     ""path"": ""<Keyboard>/l"",
                     ""interactions"": """",
@@ -771,17 +705,6 @@ public partial class @RCC_InputActions: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
-                    ""action"": ""Low Beam Lights"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""68049a6d-7f4b-4ac6-ae57-134a916a4a11"",
-                    ""path"": ""<HID::Logitech G920 Driving Force Racing Wheel for Xbox One>/button10"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""G920"",
                     ""action"": ""Low Beam Lights"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -810,17 +733,6 @@ public partial class @RCC_InputActions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""da808eef-18ce-4dbc-9cf1-043577d98c91"",
-                    ""path"": ""<HID::Logitech G920 Driving Force Racing Wheel for Xbox One>/button9"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""G920"",
-                    ""action"": ""High Beam Lights"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""0367e370-02e2-4afe-aa28-6329c07f3a80"",
                     ""path"": ""<Keyboard>/e"",
                     ""interactions"": """",
@@ -837,17 +749,6 @@ public partial class @RCC_InputActions: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
-                    ""action"": ""Indicator Right"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""e2c9283d-228b-4eed-bb92-7754056bc3cc"",
-                    ""path"": ""<HID::Logitech G920 Driving Force Racing Wheel for Xbox One>/hat/right"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""G920"",
                     ""action"": ""Indicator Right"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -876,17 +777,6 @@ public partial class @RCC_InputActions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""4dab2970-04c0-4e49-94f3-7f1d66dbda9b"",
-                    ""path"": ""<HID::Logitech G920 Driving Force Racing Wheel for Xbox One>/hat/left"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""G920"",
-                    ""action"": ""Indicator Left"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""45686879-95ca-4111-a1a0-8a51bd6face3"",
                     ""path"": ""<Keyboard>/z"",
                     ""interactions"": """",
@@ -909,17 +799,6 @@ public partial class @RCC_InputActions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""5ade0cb3-2beb-4419-816f-f881768375b9"",
-                    ""path"": ""<HID::Logitech G920 Driving Force Racing Wheel for Xbox One>/hat/up"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""G920"",
-                    ""action"": ""Indicator Hazard"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""4ce9aa29-2ded-426a-9ad1-66520c441d57"",
                     ""path"": ""<Keyboard>/shift"",
                     ""interactions"": """",
@@ -936,17 +815,6 @@ public partial class @RCC_InputActions: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
-                    ""action"": ""Gear Shift Up"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""a515f912-72c4-445d-aa6d-ba6be1069897"",
-                    ""path"": ""<HID::Logitech G920 Driving Force Racing Wheel for Xbox One>/button5"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""G920"",
                     ""action"": ""Gear Shift Up"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -980,17 +848,6 @@ public partial class @RCC_InputActions: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
-                    ""action"": ""Gear Shift Down"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""5763683e-0147-4154-9e8a-5fc71fd7161c"",
-                    ""path"": ""<HID::Logitech G920 Driving Force Racing Wheel for Xbox One>/button6"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""G920"",
                     ""action"": ""Gear Shift Down"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -1106,28 +963,6 @@ public partial class @RCC_InputActions: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 },
                 {
-                    ""name"": ""negative"",
-                    ""id"": ""def3df07-c7c5-49e2-8ead-a9d15d455d3f"",
-                    ""path"": """",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""G920"",
-                    ""action"": ""NOS"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""positive"",
-                    ""id"": ""895259a8-90c8-49b2-a3bd-ec8b286ddf79"",
-                    ""path"": ""<HID::Logitech G920 Driving Force Racing Wheel for Xbox One>/trigger"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""G920"",
-                    ""action"": ""NOS"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
                     ""name"": """",
                     ""id"": ""c7221e56-c7e1-42d9-8763-520459e0e6ca"",
                     ""path"": ""<OculusTouchController>{RightHand}/secondaryButton"",
@@ -1151,100 +986,166 @@ public partial class @RCC_InputActions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""f28cedbd-5d4e-4109-a83f-6034beeb1786"",
-                    ""path"": """",
+                    ""id"": ""8adccda7-b6fd-40ab-ab1c-8b4d20a13c58"",
+                    ""path"": ""<Logitech G29 Racing Wheel>/throttleAxis"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""G920"",
-                    ""action"": ""N Gear"",
+                    ""groups"": ""Logitech G29"",
+                    ""action"": ""Throttle"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""c67d3a53-1242-4c81-ade5-2b57f7d4bd18"",
-                    ""path"": ""<HID::Logitech G920 Driving Force Racing Wheel for Xbox One>/button13"",
+                    ""id"": ""453c031e-cf98-4b31-b838-62ac6992ff96"",
+                    ""path"": ""<Logitech G29 Racing Wheel>/brakeAxis"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""G920"",
+                    ""groups"": ""Logitech G29"",
+                    ""action"": ""Brake"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0ce9f823-8969-418f-94b5-b5d35a17719c"",
+                    ""path"": ""<Logitech G29 Racing Wheel>/clutchAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Logitech G29"",
+                    ""action"": ""Clutch"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4e51336d-7e0f-4431-8a0f-5dadc813107a"",
+                    ""path"": ""<Logitech G29 Racing Wheel>/stick/x"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Logitech G29"",
+                    ""action"": ""Steering"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""83c8f95b-0e2f-4f67-82e2-f86a26cff3a7"",
+                    ""path"": ""<Logitech G29 Racing Wheel>/shifter1"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Logitech G29"",
                     ""action"": ""1stGear"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""d1f89ffa-9f6c-4a79-9531-92fa5caf8ac3"",
-                    ""path"": ""<HID::Logitech G920 Driving Force Racing Wheel for Xbox One>/button14"",
+                    ""id"": ""d87c7b2b-63e0-42bb-a468-b0350c0bec84"",
+                    ""path"": ""<Logitech G29 Racing Wheel>/shifter3"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""G920"",
-                    ""action"": ""2ndGear"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""d1efd96e-fba6-43d8-9653-e454c6d1a279"",
-                    ""path"": ""<HID::Logitech G920 Driving Force Racing Wheel for Xbox One>/button15"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""G920"",
+                    ""groups"": ""Logitech G29"",
                     ""action"": ""3rdGear"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
-                    ""name"": """",
-                    ""id"": ""94746981-391a-411d-ba01-7d9cee57ef19"",
-                    ""path"": ""<HID::Logitech G920 Driving Force Racing Wheel for Xbox One>/button16"",
+                    ""name"": ""tempName"",
+                    ""id"": ""a649c666-f180-4a64-9eac-c43be50440b8"",
+                    ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""G920"",
+                    ""groups"": """",
+                    ""action"": """",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6900913c-9450-40f2-8d68-8cfcf9b10371"",
+                    ""path"": ""<Logitech G29 Racing Wheel>/shifter4"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Logitech G29"",
                     ""action"": ""4thGear"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""18c7fc4b-5172-4255-90af-1779c92d64fd"",
-                    ""path"": ""<HID::Logitech G920 Driving Force Racing Wheel for Xbox One>/button17"",
+                    ""id"": ""c399ec56-1cff-402f-b29c-0e8711eef5a8"",
+                    ""path"": ""<Logitech G29 Racing Wheel>/shifter6"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""G920"",
-                    ""action"": ""5thGear"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""5bb54458-b514-4be4-a828-d0e3c305c891"",
-                    ""path"": ""<HID::Logitech G920 Driving Force Racing Wheel for Xbox One>/button18"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""G920"",
+                    ""groups"": ""Logitech G29"",
                     ""action"": ""6thGear"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""56a18610-79a9-4ed7-8576-92a99b424107"",
-                    ""path"": ""<HID::Logitech G920 Driving Force Racing Wheel for Xbox One>/button12"",
+                    ""id"": ""a7ecf7ee-9426-4f4c-89b5-de29e3f2ed82"",
+                    ""path"": ""<Logitech G29 Racing Wheel>/shifter5"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""G920"",
+                    ""groups"": ""Logitech G29"",
+                    ""action"": ""5thGear"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""tempName1"",
+                    ""id"": ""73f5ef31-3f24-43e4-b449-849c4ff11338"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": """",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""03640937-1d26-4b5f-bdbc-bee70014909c"",
+                    ""path"": ""<Logitech G29 Racing Wheel>/shifter2"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Logitech G29"",
+                    ""action"": ""2ndGear"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""305a62d0-3c72-4ff5-aac8-9c3a64abb46f"",
+                    ""path"": ""<Logitech G29 Racing Wheel>/shifter7"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Logitech G29"",
                     ""action"": ""RGear"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""e086e6ca-c703-4901-878c-46e7567d1730"",
-                    ""path"": ""<HID::Logitech G920 Driving Force Racing Wheel for Xbox One>/rz"",
+                    ""id"": ""15988ea0-3a28-4a3a-80e5-b15c0cfa0312"",
+                    ""path"": ""<Logitech G29 Racing Wheel>/leftShiftButton"",
                     ""interactions"": """",
-                    ""processors"": ""Normalize(min=1,max=-1,zero=1)"",
-                    ""groups"": ""G920"",
-                    ""action"": ""Clutch"",
+                    ""processors"": """",
+                    ""groups"": ""Logitech G29"",
+                    ""action"": ""Gear Shift Down"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""99188db3-679a-49ae-96b4-5d11c3f3e2cf"",
+                    ""path"": ""<Logitech G29 Racing Wheel>/rightShiftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Logitech G29"",
+                    ""action"": ""Gear Shift Up"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -1316,17 +1217,6 @@ public partial class @RCC_InputActions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""72d2d1f3-315b-43a7-8f6c-3925bc71f2c1"",
-                    ""path"": ""<HID::Logitech G920 Driving Force Racing Wheel for Xbox One>/button8"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""G920"",
-                    ""action"": ""Change Camera"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""75dc1a32-b749-400b-b89e-900e218595d9"",
                     ""path"": ""<OculusTouchController>{LeftHand}/primaryButton"",
                     ""interactions"": """",
@@ -1354,17 +1244,6 @@ public partial class @RCC_InputActions: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
-                    ""action"": ""Look Back"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""cc718a8a-3bab-4b1f-b0e7-47f9a771f183"",
-                    ""path"": ""<HID::Logitech G920 Driving Force Racing Wheel for Xbox One>/hat/down"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""G920"",
                     ""action"": ""Look Back"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -1557,14 +1436,20 @@ public partial class @RCC_InputActions: IInputActionCollection2, IDisposable
             ""devices"": []
         },
         {
-            ""name"": ""G920"",
-            ""bindingGroup"": ""G920"",
-            ""devices"": []
-        },
-        {
             ""name"": ""Oculus Quest"",
             ""bindingGroup"": ""Oculus Quest"",
             ""devices"": []
+        },
+        {
+            ""name"": ""Logitech G29"",
+            ""bindingGroup"": ""Logitech G29"",
+            ""devices"": [
+                {
+                    ""devicePath"": ""<Logitech G29 Racing Wheel>"",
+                    ""isOptional"": false,
+                    ""isOR"": false
+                }
+            ]
         }
     ]
 }");
@@ -2033,15 +1918,6 @@ public partial class @RCC_InputActions: IInputActionCollection2, IDisposable
             return asset.controlSchemes[m_GamepadSchemeIndex];
         }
     }
-    private int m_G920SchemeIndex = -1;
-    public InputControlScheme G920Scheme
-    {
-        get
-        {
-            if (m_G920SchemeIndex == -1) m_G920SchemeIndex = asset.FindControlSchemeIndex("G920");
-            return asset.controlSchemes[m_G920SchemeIndex];
-        }
-    }
     private int m_OculusQuestSchemeIndex = -1;
     public InputControlScheme OculusQuestScheme
     {
@@ -2049,6 +1925,15 @@ public partial class @RCC_InputActions: IInputActionCollection2, IDisposable
         {
             if (m_OculusQuestSchemeIndex == -1) m_OculusQuestSchemeIndex = asset.FindControlSchemeIndex("Oculus Quest");
             return asset.controlSchemes[m_OculusQuestSchemeIndex];
+        }
+    }
+    private int m_LogitechG29SchemeIndex = -1;
+    public InputControlScheme LogitechG29Scheme
+    {
+        get
+        {
+            if (m_LogitechG29SchemeIndex == -1) m_LogitechG29SchemeIndex = asset.FindControlSchemeIndex("Logitech G29");
+            return asset.controlSchemes[m_LogitechG29SchemeIndex];
         }
     }
     public interface IVehicleActions
