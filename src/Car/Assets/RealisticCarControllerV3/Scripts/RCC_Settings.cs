@@ -142,7 +142,7 @@ public class RCC_Settings : ScriptableObject {
     public BehaviorType[] behaviorTypes;
 
     // Main Controller Settings
-    public bool useAutomaticGear = true;        //  All vehicles will use automatic gear.
+    public bool useAutomaticGear = false;        //  All vehicles will use automatic gear.
     public bool useAutomaticClutch = true;      //  All vehicles will use automatic clutch.
     public bool runEngineAtAwake = true;        //  All vehicles will start with engine running.
     public bool autoReverse = true;     //  All vehicles can go reverse while pressing brake.
