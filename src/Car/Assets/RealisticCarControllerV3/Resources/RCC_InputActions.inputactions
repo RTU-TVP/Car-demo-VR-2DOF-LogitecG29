@@ -413,6 +413,17 @@
                     "isPartOfComposite": false
                 },
                 {
+                    "name": "",
+                    "id": "bf5286e0-5427-45ac-b3d5-bcad18600bf7",
+                    "path": "<HID::wch.cn Hand Brake>/trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Logitech G29",
+                    "action": "Handbrake",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
                     "name": "wasd",
                     "id": "a135f3bc-f45c-479f-ad28-b4581890cd28",
                     "path": "1DAxis(minValue=0)",
