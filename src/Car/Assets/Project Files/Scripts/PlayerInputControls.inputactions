@@ -1,0 +1,903 @@
+{
+    "name": "PlayerInputControls",
+    "maps": [
+        {
+            "name": "Moving",
+            "id": "2108f7fb-003c-4e9f-8ee1-726793fbc351",
+            "actions": [
+                {
+                    "name": "Steering",
+                    "type": "Value",
+                    "id": "6722bea8-563a-4bf5-8a23-f0fede23e7dc",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Clutch",
+                    "type": "Value",
+                    "id": "1a99b793-6b07-457e-acc9-16c3b2e67018",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Brake",
+                    "type": "Value",
+                    "id": "f770041b-7156-4e0b-b055-5a73ea464364",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Throttle",
+                    "type": "PassThrough",
+                    "id": "9dcc1f3e-0d95-48e6-bc8a-0b3a33fcfef3",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Handbrake",
+                    "type": "Value",
+                    "id": "e05050f8-20b5-459d-a18b-8962de4cc890",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Shifter 1",
+                    "type": "Button",
+                    "id": "0a6da0fe-8fd6-478d-baf0-f98d49e9f902",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Shifter 2",
+                    "type": "Button",
+                    "id": "e2cfc75f-e9b7-4030-8797-3199ea6147bc",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Shifter 3",
+                    "type": "Button",
+                    "id": "527f5219-dbc5-4992-9b3d-afed6a529e4b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Shifter 4",
+                    "type": "Button",
+                    "id": "4145d9ce-a547-4458-a3f6-232481f88447",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Shifter 5",
+                    "type": "Button",
+                    "id": "af761dc9-a679-4447-9818-6d4c20d1dbf3",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Shifter 6",
+                    "type": "Button",
+                    "id": "7de8e6e1-6600-4fb3-8ca5-3064e468ff60",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Shifter 7",
+                    "type": "Button",
+                    "id": "1c8e58cb-f825-4d7d-b648-f1d37c77eb1d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Shifter Up",
+                    "type": "Button",
+                    "id": "14ef7782-c2ab-4adb-a416-1413c3cb489b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Shifter Down",
+                    "type": "Button",
+                    "id": "2e630c47-3010-4360-91cd-0a6e0e879fe4",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Shifter Neutral",
+                    "type": "Button",
+                    "id": "85947aea-74f4-456a-858f-bb1cb491bc35",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "7691cb0e-5a26-4ffb-8d1f-2a4435b231b4",
+                    "path": "<Logitech G29 Racing Wheel>/throttleAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Steering Wheel",
+                    "action": "Throttle",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "586438b5-bc25-48e8-ac65-33e0e7b8ecb2",
+                    "path": "<Logitech G29 Racing Wheel>/shifter4",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Steering Wheel",
+                    "action": "Shifter 4",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6b6231c8-46eb-4cea-b9e1-51f02ef68795",
+                    "path": "<Logitech G29 Racing Wheel>/shifter1",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Steering Wheel",
+                    "action": "Shifter 1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b38b402b-a89a-4430-9e06-0d2ac1dfad92",
+                    "path": "<Keyboard>/numpad1",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Shifter 1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c60cfb75-9149-401c-bd5f-3cbb9fd90cca",
+                    "path": "<Logitech G29 Racing Wheel>/shifter7",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Steering Wheel",
+                    "action": "Shifter 7",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4c7113fa-0f0d-4655-aff2-5624ff903a15",
+                    "path": "<Logitech G29 Racing Wheel>/shifter6",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Steering Wheel",
+                    "action": "Shifter 6",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b332ab31-9d20-4314-a0c9-025bc485a6c4",
+                    "path": "<Logitech G29 Racing Wheel>/shifter2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Steering Wheel",
+                    "action": "Shifter 2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "83a9e1b8-a591-4d58-9db1-71b5eeb97619",
+                    "path": "<Logitech G29 Racing Wheel>/shifter5",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Steering Wheel",
+                    "action": "Shifter 5",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e490b99b-6482-4101-af9a-43adec9aedb0",
+                    "path": "<Logitech G29 Racing Wheel>/shifter3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Steering Wheel",
+                    "action": "Shifter 3",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Keyboard AD",
+                    "id": "e3aac04c-5291-4fc7-a674-07926168e866",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Steering",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "7ce6dac2-96e3-40de-a236-57d4396a45d7",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Steering",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "8166bae6-0a34-472f-bfa1-04d6b0023291",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Steering",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "91171cee-1c50-43dc-80c0-3b60b0b5d11c",
+                    "path": "<Logitech G29 Racing Wheel>/stick/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Steering Wheel",
+                    "action": "Steering",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "121d72f8-180d-4d61-9d89-b7c5a8d8b37f",
+                    "path": "<HID::PC Game Controller       >/stick/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Steering Wheel",
+                    "action": "Steering",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1388312a-e710-4e62-9624-e0b3d263cd48",
+                    "path": "<XInputController>/leftStick/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Steering",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9212ca15-0c95-47ac-a366-56570ec7a504",
+                    "path": "<Logitech G29 Racing Wheel>/brakeAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Steering Wheel",
+                    "action": "Brake",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Keyboard S",
+                    "id": "ae08fd07-2a33-46e6-864c-19f751e894ea",
+                    "path": "1DAxis(minValue=0)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Brake",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "0ab6572e-596b-4b1d-8a47-7bb0dd6e5ae8",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard",
+                    "action": "Brake",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "0210e8b1-f313-4a72-af6b-1cd7e9db5411",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard",
+                    "action": "Brake",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Defender Forsage GTR",
+                    "id": "b1490712-4780-4a41-987f-d46da89359e7",
+                    "path": "1DAxis(minValue=0)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Brake",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "ac88ce03-0745-4fa9-8432-9fc08ab31e44",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Steering Wheel",
+                    "action": "Brake",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "160744f7-c305-4ea1-9032-0e74ff14dfd1",
+                    "path": "<HID::PC Game Controller       >/stick/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Steering Wheel",
+                    "action": "Brake",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Gamepad",
+                    "id": "afe3eeb1-44a7-46c3-b721-577fa72bcc1d",
+                    "path": "1DAxis(minValue=0)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Brake",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "0db91994-3975-42e0-87f4-bdc3b5532c9c",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Brake",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "15ef77be-c2db-433d-bd81-8f6441789cf9",
+                    "path": "<XInputController>/leftStick/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Brake",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "07b2f394-f21b-4666-9e81-f9612c5b446f",
+                    "path": "<Keyboard>/numpad2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Shifter 2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a48c2135-0fda-4782-afa2-f51264c274cb",
+                    "path": "<Keyboard>/numpad3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Shifter 3",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7480b62a-f6dc-4b87-bb8c-ab8a16ad6d20",
+                    "path": "<Keyboard>/numpad4",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Shifter 4",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9765fa9f-183a-49a8-916d-4babd25375f3",
+                    "path": "<Keyboard>/numpad5",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Shifter 5",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f7ce3b6a-2a5c-4ef4-b52f-2283ed5d2771",
+                    "path": "<Keyboard>/numpad6",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Shifter 6",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6f35aa82-813f-4d00-8a4a-cfa9fbcf9299",
+                    "path": "<Keyboard>/numpad7",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Shifter 7",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Keyboard Space",
+                    "id": "ead51d9f-cd8a-40ba-9dc6-230a8279e702",
+                    "path": "1DAxis(minValue=0)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Handbrake",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "6e61f8df-99db-4fd1-b520-11ace5af086e",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard",
+                    "action": "Handbrake",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "00f53e44-7162-42c3-b347-1a20d9af92f0",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard",
+                    "action": "Handbrake",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "HandBrake",
+                    "id": "db8928f6-cc61-427e-bda5-b6d697f47439",
+                    "path": "1DAxis(minValue=0)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Handbrake",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "9af8c43d-169a-4bef-aa44-ed63c624a6ef",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Steering Wheel",
+                    "action": "Handbrake",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "c071453a-e040-4700-a7e3-3540a502905e",
+                    "path": "<HID::wch.cn Hand Brake>/trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Steering Wheel",
+                    "action": "Handbrake",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Gamepad",
+                    "id": "23db0dd6-bb47-4f21-b0a4-c638188d326e",
+                    "path": "1DAxis(minValue=0)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Handbrake",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "ae2d750b-05ee-422f-bcdb-bb1204b64e20",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Handbrake",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "f93bb27b-ca87-4581-8bec-1b56df9bc73f",
+                    "path": "<XInputController>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Handbrake",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Keyboard W",
+                    "id": "309dd6dc-72ff-45ba-ab3d-6c2f9e237677",
+                    "path": "1DAxis(minValue=0)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Throttle",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "ce60964e-dafd-4131-8055-d35b534251a3",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Steering Wheel",
+                    "action": "Throttle",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "933bacfe-0ece-4822-8bb4-fc815a460074",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Steering Wheel",
+                    "action": "Throttle",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Defender Forsage GTR",
+                    "id": "1286e20a-ee54-41b1-affd-542a62e75ca7",
+                    "path": "1DAxis(minValue=0)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Throttle",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "013c661b-183a-4fc8-932e-82f199dfef8a",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Steering Wheel",
+                    "action": "Throttle",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "acb671c8-49d4-4655-abef-d973cd7f33a8",
+                    "path": "<HID::PC Game Controller       >/stick/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Steering Wheel",
+                    "action": "Throttle",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Gamepad",
+                    "id": "185a7b6e-e6be-402f-bf20-ed7003cd5011",
+                    "path": "1DAxis(minValue=0)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Throttle",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "c79c0c1e-fde4-48e0-bea9-30f4f7cd5de6",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Throttle",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "b7e747b7-23b0-4bb6-9716-69810164f066",
+                    "path": "<XInputController>/leftStick/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Throttle",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "a8a5db89-78c6-4442-b7f8-b160c8d7c858",
+                    "path": "<Logitech G29 Racing Wheel>/clutchAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Steering Wheel",
+                    "action": "Clutch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Keyboard F",
+                    "id": "fac3b1de-5fc1-4a04-b371-9b1ce9221bf3",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Clutch",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "ea2d499a-0bf0-46e5-ad02-7404e4f00e95",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard",
+                    "action": "Clutch",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "ade4a297-e91f-4972-ba9a-c66dc928f39d",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard",
+                    "action": "Clutch",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "ccc3d354-c4d4-42f3-8893-808eaeebb824",
+                    "path": "<HID::PC Game Controller       >/trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Steering Wheel",
+                    "action": "Shifter Up",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e2e80549-f201-45e6-a7cf-9ab1a528706e",
+                    "path": "<Keyboard>/leftShift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard",
+                    "action": "Shifter Up",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "096d6d28-2e4d-43e4-9d50-528ce026bb06",
+                    "path": "<XInputController>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Shifter Up",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5ba88274-e430-41e7-9818-7595ae0d806e",
+                    "path": "<HID::PC Game Controller       >/button2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Steering Wheel",
+                    "action": "Shifter Down",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a780aaeb-21b2-4f46-a215-4f08a4a8fee5",
+                    "path": "<Keyboard>/leftCtrl",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard",
+                    "action": "Shifter Down",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fcc12292-90bf-433c-a2d9-57fd9b632a44",
+                    "path": "<XInputController>/leftShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Shifter Down",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0385221b-4f9a-4cae-8048-04e24a8b62da",
+                    "path": "<Keyboard>/numpad0",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard",
+                    "action": "Shifter Neutral",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Other",
+            "id": "58cc1521-13ca-4c55-9001-12ce79b51347",
+            "actions": [
+                {
+                    "name": "Ignition",
+                    "type": "Button",
+                    "id": "57246169-47db-4bf5-8d8e-56e576b0bc88",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "9a58aeb3-cf5c-4f12-aa45-43b2d0861bdb",
+                    "path": "<Keyboard>/k",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Ignition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "178ccfa2-985f-40ff-bcf0-d60414166b03",
+                    "path": "<Logitech G29 Racing Wheel>/rightBumperButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Steering Wheel",
+                    "action": "Ignition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "132c1185-dea9-4592-8435-33e91c0d26fe",
+                    "path": "<HID::PC Game Controller       >/button6",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Steering Wheel",
+                    "action": "Ignition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a5ca2d4f-9152-4c18-9f6d-4d4517d82233",
+                    "path": "<XInputController>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Ignition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Keyboard",
+            "bindingGroup": "Keyboard",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Steering Wheel",
+            "bindingGroup": "Steering Wheel",
+            "devices": [
+                {
+                    "devicePath": "<Logitech G29 Racing Wheel>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<HID::PC Game Controller       >",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Gamepad",
+            "bindingGroup": "Gamepad",
+            "devices": []
+        }
+    ]
+}
