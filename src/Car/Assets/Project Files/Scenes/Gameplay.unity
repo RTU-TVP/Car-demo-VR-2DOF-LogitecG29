@@ -18302,6 +18302,10 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8573549319431884798, guid: f5b24270dd3a52e4180206467601e919,
         type: 3}
+      insertIndex: 2
+      addedObject: {fileID: 8573549318259377567}
+    - targetCorrespondingSourceObject: {fileID: 8573549319431884798, guid: f5b24270dd3a52e4180206467601e919,
+        type: 3}
       insertIndex: -1
       addedObject: {fileID: 8573549318259377566}
     - targetCorrespondingSourceObject: {fileID: 8573549319431884798, guid: f5b24270dd3a52e4180206467601e919,
@@ -18402,6 +18406,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _carTelemetryHandler: {fileID: 8573549318259377565}
+--- !u!114 &8573549318259377567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8573549318259377562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dc85d201f0efd2458bd76ce4c5e4882, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerInputControlsReader: {fileID: 11400000, guid: 26491ce9ca0aa2a4dafd6f2f36219b47,
+    type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
