@@ -16,15 +16,27 @@
 /[Bb]uild/
 /[Bb]uilds/
 /[Bb]uild-[Ww]in/
+/[Bb]uild [Ww]in/
 /[Bb]uild-[Ww]indows/
+/[Bb]uild [Ww]indows/
 /[Bb]uild-[Aa]ndroid/
+/[Bb]uild [Aa]ndroid/
+/[Bb]uild-[Pp]lay-[Mm]arket/
+/[Bb]uild [Pp]lay [Mm]arket/
 /[Bb]uild-[Ii]os/
+/[Bb]uild [Ii]os/
 /[Bb]uild-[Mm]ac/
+/[Bb]uild [Mm]ac/
 /[Bb]uild-[Ll]inux/
+/[Bb]uild [Ll]inux/
 /[Bb]uild-[Ww]ebGL/
+/[Bb]uild [Ww]ebGL/
 /[Bb]uild-[Ww]eb/
+/[Bb]uild [Ww]eb/
 /[Bb]uild-[Uu][Ww][Pp]/
+/[Bb]uild [Uu][Ww][Pp]/
 /[Bb]uild-[Uu]niversal/
+/[Bb]uild [Uu]niversal/
 
 # Generated files new
 */Library/
@@ -41,6 +53,11 @@
 *ExportedObj/
 */sysinfo.txt
 *.vsconfig
+
+# Archives and packages
+*.rar
+*.zip
+*.7z
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
