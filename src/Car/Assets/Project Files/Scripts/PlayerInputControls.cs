@@ -782,6 +782,17 @@ public partial class @PlayerInputControls: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""b6575679-29e4-4350-94eb-5add120d6919"",
+                    ""path"": ""<Keyboard>/shift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Shifter Up"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""5ba88274-e430-41e7-9818-7595ae0d806e"",
                     ""path"": ""<HID::PC Game Controller       >/button2"",
                     ""interactions"": """",
@@ -806,6 +817,17 @@ public partial class @PlayerInputControls: IInputActionCollection2, IDisposable
                     ""name"": """",
                     ""id"": ""fcc12292-90bf-433c-a2d9-57fd9b632a44"",
                     ""path"": ""<XInputController>/leftShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Shifter Down"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""22635d22-b716-42fd-8c05-fdfd82c67d61"",
+                    ""path"": ""<Keyboard>/ctrl"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
