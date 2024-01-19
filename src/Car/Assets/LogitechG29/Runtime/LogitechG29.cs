@@ -30,7 +30,7 @@ namespace LogitechG29.Runtime
     public sealed class LogitechG29 : InputDevice, IInputUpdateCallbackReceiver
     {
         private const bool IGNORE_XINPUT_CONTROLLERS = false;
-
+        
         public enum G29Button : byte
         {
             South = 0,
@@ -374,27 +374,6 @@ namespace LogitechG29.Runtime
             }
         }
 
-        /// <summary>
-        /// Динамическая сила пружины воспроизводится по оси X.
-        /// Если подключен джойстик, все силы, генерируемые SDK рулевого колеса, будут воспроизводиться по оси X.
-        /// И дополнительно будет постоянная пружина по оси Y.
-        /// </summary>
-        /// <param name="offset">
-        /// Определяет центр эффекта силы пружины. Допустимый диапазон: от -100 до 100.
-        /// Указание 0 центрирует пружину. Любые значения за пределами этого диапазона автоматически фиксируются.
-        /// </param>
-        /// <param name="saturation">
-        /// Укажите уровень насыщенности эффекта силы пружины.
-        /// Насыщение остается постоянным после определенного отклонения от центра пружины.
-        /// Это сравнимо с величиной. Допустимые диапазоны: от 0 до 100.
-        /// Любое значение выше 100 автоматически фиксируется.
-        /// </param>
-        /// <param name="coefficient">
-        /// Укажите наклон увеличения силы эффекта относительно
-        /// на величину отклонения от центра состояния.
-        /// Более высокие значения означают, что уровень насыщения достигается раньше.
-        /// Допустимые диапазоны: от -100 до 100. Любое значение, выходящее за пределы допустимого диапазона, автоматически фиксируется.
-        /// </param>
         public bool PlaySpringForce(int offset, int saturation, int coefficient)
         {
             if (!IsConnected)
@@ -405,10 +384,6 @@ namespace LogitechG29.Runtime
             return LogitechGsdk.LogiPlaySpringForce(Index, offset, saturation, coefficient);
         }
 
-        /// <summary>
-        /// Остановить текущую силу пружины
-        /// </summary>
-        /// <returns></returns>
         public bool StopSpringForce()
         {
             if (!IsConnected)
@@ -419,24 +394,6 @@ namespace LogitechG29.Runtime
             return LogitechGsdk.LogiStopSpringForce(Index);
         }
 
-        /// <summary>
-        /// Постоянная сила работает лучше всего, когда постоянно обновляется значением, привязанным к физическому движку.
-        /// Свяжите руль/джойстик с физическим движком автомобиля с помощью векторной силы.
-        /// Это создаст эффект центрирующей пружины, эффект скольжения, ощущение инерции автомобиля,
-        /// и в зависимости от физического движка должно также даваться боковое столкновение
-        /// (руль/джойстик дергается в сторону, противоположную стене, которой только что коснулась машина).
-        /// Вектор силы может быть рассчитан, например, на основе боковой силы, измеренной на передних шинах.
-        /// Этот вектор силы должен быть равен 0 при остановке или движении прямо.
-        /// При прохождении поворота или при движении по накрененной поверхности вектор силы
-        /// должен иметь величину, которая растет пропорционально.
-        /// </summary>
-        /// <param name="magnitude">
-        /// Определяет величину эффекта постоянной силы.
-        /// Отрицательное значение меняет направление силы.
-        /// Допустимые диапазоны для valuePercentage: от -100 до 100.
-        /// Любые значения, выходящие за пределы допустимого диапазона, автоматически фиксируются.
-        /// </param>
-        /// <return></return>
         public bool PlayConstantForce(int magnitude)
         {
             if (!IsConnected)
@@ -447,10 +404,6 @@ namespace LogitechG29.Runtime
             return LogitechGsdk.LogiPlayConstantForce(Index, magnitude);
         }
 
-        /// <summary>
-        /// Остановить текущую постоянную силу
-        /// </summary>
-        /// <returns></returns>
         public bool StopConstantForce()
         {
             if (!IsConnected)
@@ -461,18 +414,6 @@ namespace LogitechG29.Runtime
             return LogitechGsdk.LogiStopConstantForce(Index);
         }
 
-        /// <summary>
-        /// Имитируем поверхности, на которых сложно включиться (грязь, машина на остановке) или скользкие поверхности (снег, лед)
-        /// </summary>
-        /// <param name="coefficient">
-        /// Укажите наклон увеличения силы эффекта относительно
-        /// на величину отклонения от центра состояния.
-        /// Более высокие значения означают, что уровень насыщения достигается раньше.
-        /// Допустимые диапазоны: от -100 до 100. Любое значение, выходящее за пределы допустимого диапазона, автоматически фиксируется.
-        /// -100 имитирует очень скользкий эффект, +100 делает колесо/джойстик очень трудным для перемещения,
-        /// имитация автомобиля на остановке или в грязи.
-        /// </param>
-        /// <returns></returns>
         public bool PlayDamperForce(int coefficient)
         {
             if (!IsConnected)
@@ -482,11 +423,7 @@ namespace LogitechG29.Runtime
 
             return LogitechGsdk.LogiPlayDamperForce(Index, coefficient);
         }
-
-        /// <summary>
-        /// Остановить силу демпфера тока
-        /// </summary>
-        /// <returns></returns>
+        
         public bool StopDamperForce()
         {
             if (!IsConnected)
@@ -497,15 +434,7 @@ namespace LogitechG29.Runtime
             return LogitechGsdk.LogiStopDamperForce(Index);
         }
 
-        /// <summary>
-        /// </summary>
-        /// <param name="magnitude">
-        /// : определяет величину эффекта силы лобового столкновения.
-        /// Допустимые диапазоны для значения ValuePercentage: от 0 до 100.
-        /// Значения выше 100 фиксируются молча.
-        /// </param>
-        /// <returns></returns>
-        public bool PlayFontalCollisionForce(int magnitude)
+        public bool PlayFrontalCollisionForce(int magnitude)
         {
             if (!IsConnected)
             {
@@ -515,18 +444,6 @@ namespace LogitechG29.Runtime
             return LogitechGsdk.LogiPlayFrontalCollisionForce(Index, magnitude);
         }
 
-        /// <summary>
-        /// Если вы уже используете постоянную силу, привязанную к векторной силе физического движка,
-        /// тогда вам, возможно, не понадобится добавлять боковые столкновения, поскольку это зависит от вашей физики
-        /// двигатель, о боковых столкновениях может автоматически позаботиться постоянная сила.
-        /// </summary>
-        /// <param name="magnitude">
-        /// Определяет величину эффекта силы бокового столкновения.
-        /// Отрицательное значение меняет направление силы.
-        /// Допустимые диапазоны для valuePercentage: от -100 до 100.
-        /// Любые значения, выходящие за пределы допустимого диапазона, автоматически фиксируются.
-        /// </param>
-        /// <returns></returns>
         public bool PlaySideCollisionForce(int magnitude)
         {
             if (!IsConnected)
@@ -537,14 +454,6 @@ namespace LogitechG29.Runtime
             return LogitechGsdk.LogiPlaySideCollisionForce(Index, magnitude);
         }
 
-        /// <summary>
-        /// </summary>
-        /// <param name="magnitude">
-        /// Определяет величину эффекта грунтовой дороги.
-        /// Допустимые диапазоны для значения ValuePercentage: от 0 до 100.
-        /// Значения выше 100 фиксируются молча.
-        /// </param>
-        /// <returns></returns>
         public bool PlayDirtRoadEffect(int magnitude)
         {
             if (!IsConnected)
@@ -555,10 +464,6 @@ namespace LogitechG29.Runtime
             return LogitechGsdk.LogiPlayDirtRoadEffect(Index, magnitude);
         }
 
-        /// <summary>
-        /// Остановить текущий эффект грунтовой дороги
-        /// </summary>
-        /// <returns></returns>
         public bool StopDirtRoadEffect()
         {
             if (!IsConnected)
@@ -569,14 +474,6 @@ namespace LogitechG29.Runtime
             return LogitechGsdk.LogiStopDirtRoadEffect(Index);
         }
 
-        /// <summary>
-        /// </summary>
-        /// <param name="magnitude">
-        /// Определяет величину эффекта ухабистой дороги.
-        /// Допустимые диапазоны для значения ValuePercentage: от 0 до 100.
-        /// Значения выше 100 фиксируются молча.
-        /// </param>
-        /// <returns></returns>
         public bool PlayBumpyRoadEffect(int magnitude)
         {
             if (!IsConnected)
@@ -587,10 +484,6 @@ namespace LogitechG29.Runtime
             return LogitechGsdk.LogiPlayBumpyRoadEffect(Index, magnitude);
         }
 
-        /// <summary>
-        /// Остановить текущий эффект ухабистой дороги
-        /// </summary>
-        /// <returns></returns>
         public bool StopBumpyRoadEffect()
         {
             if (!IsConnected)
@@ -601,14 +494,6 @@ namespace LogitechG29.Runtime
             return LogitechGsdk.LogiStopBumpyRoadEffect(Index);
         }
 
-        /// <summary>
-        /// </summary>
-        /// <param name="magnitude">
-        /// Определяет величину эффекта скользкой дороги.
-        /// Допустимые диапазоны для значения ValuePercentage: от 0 до 100.
-        /// 100 соответствует самому скользкому эффекту.
-        /// </param>
-        /// <returns></returns>
         public bool PlaySlipperyRoadEffect(int magnitude)
         {
             if (!IsConnected)
@@ -619,10 +504,6 @@ namespace LogitechG29.Runtime
             return LogitechGsdk.LogiPlaySideCollisionForce(Index, magnitude);
         }
 
-        /// <summary>
-        /// Остановить текущий эффект скользкой дороги
-        /// </summary>
-        /// <returns></returns>
         public bool StopSlipperyRoadEffect()
         {
             if (!IsConnected)
@@ -640,21 +521,6 @@ namespace LogitechG29.Runtime
             Triangle = 2
         }
 
-        /// <summary>
-        /// </summary>
-        /// <param name="type">Определяет тип силового эффекта.</param>
-        /// <param name="magnitude">
-        /// Определяет величину поверхностного эффекта.
-        /// Допустимые диапазоны для значения ValuePercentage: от 0 до 100.
-        /// Значения выше 100 фиксируются молча.
-        /// </param>
-        /// <param name="period">
-        /// Определяет период действия периодической силы.
-        /// Значение представляет собой продолжительность одного полного цикла периодической функции, измеряемую в миллисекундах.
-        /// Хороший диапазон значений для периода от 20 мс (песок) до 120 мс (деревянный мост или булыжник).
-        /// Для поверхностного эффекта период не должен превышать 150 мс.
-        /// </param>
-        /// <returns></returns>
         public bool PlaySurfaceEffect(SurfaceType type, int magnitude, int period)
         {
             if (!IsConnected)
@@ -665,10 +531,6 @@ namespace LogitechG29.Runtime
             return LogitechGsdk.LogiPlaySurfaceEffect(Index, (int)type, magnitude, period);
         }
 
-        /// <summary>
-        /// Остановить текущий эффект поверхности
-        /// </summary>
-        /// <returns></returns>
         public bool StopSurfaceEffect()
         {
             if (!IsConnected)
@@ -679,10 +541,6 @@ namespace LogitechG29.Runtime
             return LogitechGsdk.LogiStopSurfaceEffect(Index);
         }
 
-        /// <summary>
-        /// Воспроизвести текущий эффект полета
-        /// </summary>
-        /// <returns></returns>
         public bool PlayCarAirborne()
         {
             if (!IsConnected)
@@ -693,10 +551,6 @@ namespace LogitechG29.Runtime
             return LogitechGsdk.LogiPlayCarAirborne(Index);
         }
 
-        /// <summary>
-        /// Остановить текущий воздушно-капельный эффект
-        /// </summary>
-        /// <returns></returns>
         public bool StopCarAirborne()
         {
             if (!IsConnected)
@@ -707,10 +561,6 @@ namespace LogitechG29.Runtime
             return LogitechGsdk.LogiStopCarAirborne(Index);
         }
 
-        /// <summary>
-        /// </summary>
-        /// <param name="usableRange">Определяет зону нечувствительности в процентах от эффекта силы плавного останова..</param>
-        /// <returns></returns>
         public bool PlaySoftstopForce(int usableRange)
         {
             if (!IsConnected)
@@ -721,10 +571,6 @@ namespace LogitechG29.Runtime
             return LogitechGsdk.LogiPlaySoftstopForce(Index, usableRange);
         }
 
-        /// <summary>
-        /// Остановить текущую силу плавного останова
-        /// </summary>
-        /// <returns></returns>
         public bool StopSoftstopForce()
         {
             if (!IsConnected)
